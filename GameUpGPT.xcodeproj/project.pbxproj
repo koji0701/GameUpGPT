@@ -50,29 +50,11 @@
 			);
 			target = E55FCAD92D9E74EB00607728 /* GameUpGPT MessagesExtension */;
 		};
-		E55FCAFA2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Config.xcconfig,
-			);
-			target = E55FCAD02D9E74E800607728 /* GameUpGPT */;
-		};
-		E55FCAFB2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT MessagesExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Config.xcconfig,
-			);
-			target = E55FCAD92D9E74EB00607728 /* GameUpGPT MessagesExtension */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E55FCAD32D9E74E800607728 /* GameUpGPT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				E55FCAFA2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT" target */,
-				E55FCAFB2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT MessagesExtension" target */,
-			);
 			path = GameUpGPT;
 			sourceTree = "<group>";
 		};
