@@ -12,10 +12,81 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    var llama = LlamaManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        
+        
     }
+    
+    @IBAction func gaslightClicked(_ sender: Any) {
+        
+        
+        let llamaPrompt = "Act an actor who is acting like a college student. This college student is currently in a breakup, and is trying to gaslight their partner. Create a text message embodying this. This should be about a paragraph long. Use college student casual language."
+
+        llama.requestLlamaAPI(with: llamaPrompt) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let output):
+                    if let conversation = self.activeConversation {
+                        conversation.insertText(output) { error in
+                            if let error = error {
+                                print("Failed to insert text: \(error.localizedDescription)")
+                            }
+                        }
+                    } else {
+                        print("No active conversation available.")
+                    }
+                case .failure(let error):
+                    print("API request failed: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
+    @IBAction func requestButtonClicked(_ sender: Any) {
+        
+        let llamaPrompt = "Act like a college student who knows how to flirt subtly. Generate a creative, flirty pickup line message to a smart college girl."
+
+        llama.requestLlamaAPI(with: llamaPrompt) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let output):
+                    if let conversation = self.activeConversation {
+                        conversation.insertText(output) { error in
+                            if let error = error {
+                                print("Failed to insert text: \(error.localizedDescription)")
+                            }
+                        }
+                    } else {
+                        print("No active conversation available.")
+                    }
+                case .failure(let error):
+                    print("API request failed: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
+
+//    private func getConversationContext() -> String {
+//        guard let conversation = self.activeConversation else {
+//            return ""
+//        }
+//        var context = ""
+//        // Iterate through the messages in the conversation.
+//        for message in conversation.messages {
+//            if let text = message.summaryText {
+//                context += "\(text)\n"
+//            }
+//        }
+//        return context
+//    }
+//    
+    
+    
     
     // MARK: - Conversation Handling
     

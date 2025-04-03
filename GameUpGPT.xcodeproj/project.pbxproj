@@ -36,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E55E15BB2D9E9134002C5F24 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 		E55FCAD12D9E74E800607728 /* GameUpGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameUpGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55FCADA2D9E74EB00607728 /* GameUpGPT MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GameUpGPT MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55FCADF2D9E74EB00607728 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
@@ -49,11 +50,29 @@
 			);
 			target = E55FCAD92D9E74EB00607728 /* GameUpGPT MessagesExtension */;
 		};
+		E55FCAFA2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Config.xcconfig,
+			);
+			target = E55FCAD02D9E74E800607728 /* GameUpGPT */;
+		};
+		E55FCAFB2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT MessagesExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Config.xcconfig,
+			);
+			target = E55FCAD92D9E74EB00607728 /* GameUpGPT MessagesExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E55FCAD32D9E74E800607728 /* GameUpGPT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E55FCAFA2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT" target */,
+				E55FCAFB2D9E78EA00607728 /* Exceptions for "GameUpGPT" folder in "GameUpGPT MessagesExtension" target */,
+			);
 			path = GameUpGPT;
 			sourceTree = "<group>";
 		};
@@ -82,6 +101,7 @@
 		E55FCACA2D9E74E700607728 = {
 			isa = PBXGroup;
 			children = (
+				E55E15BB2D9E9134002C5F24 /* Untitled.swift */,
 				E55FCAD32D9E74E800607728 /* GameUpGPT */,
 				E55FCAE12D9E74EB00607728 /* GameUpGPT MessagesExtension */,
 				E55FCADE2D9E74EB00607728 /* Frameworks */,
@@ -229,6 +249,8 @@
 /* Begin XCBuildConfiguration section */
 		E55FCAEC2D9E74EC00607728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E55FCAD32D9E74E800607728 /* GameUpGPT */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
@@ -238,6 +260,7 @@
 				INFOPLIST_FILE = "GameUpGPT MessagesExtension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GameUpGPT;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -255,6 +278,8 @@
 		};
 		E55FCAED2D9E74EC00607728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E55FCAD32D9E74E800607728 /* GameUpGPT */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
@@ -264,6 +289,7 @@
 				INFOPLIST_FILE = "GameUpGPT MessagesExtension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GameUpGPT;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +426,8 @@
 		};
 		E55FCAF22D9E74EC00607728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E55FCAD32D9E74E800607728 /* GameUpGPT */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -409,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Koji-Wong.GameUpGPT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +449,8 @@
 		};
 		E55FCAF32D9E74EC00607728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E55FCAD32D9E74E800607728 /* GameUpGPT */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +460,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Koji-Wong.GameUpGPT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
