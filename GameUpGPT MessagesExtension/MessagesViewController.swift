@@ -8,6 +8,8 @@
 import UIKit
 import Messages
 
+// init comment
+
 class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
